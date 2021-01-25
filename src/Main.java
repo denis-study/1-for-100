@@ -4,7 +4,7 @@ public class Main {
         int bonus = 1;
         int replenishment = 3100;
         int balance = 200;
-        int bonuses = replenishment / 1000 * bonus;
+        int bonuses = replenishment / 100 * bonus;
         int amount = bonuses + balance + replenishment;
 
 
