@@ -2,19 +2,23 @@ public class Main {
     public static void main(String[] args) {
 
         int bonus = 1;
-        int replenishment = 1000;
-        int balance = 200;
+
+        int replenishment = 999;
+        int balance = 100;
         int bonuses = replenishment / 100 * bonus;
-        int amount = bonuses + balance + replenishment;
+        int bonusAmount = bonuses + balance + replenishment;
+        int nobonusAmount = replenishment + balance;
 
-        if (replenishment < 1000) {
+        if (replenishment <= 1000) {
             bonuses = 0;
-
-        } else {
-            bonuses = replenishment / 100 * bonus;;
+            System.out.println(nobonusAmount);
+            System.out.println(bonuses);
+        } else
+        {
+            bonuses = replenishment / 100 * bonus;
+            System.out.println(bonusAmount);
             System.out.println(bonuses);
         }
 
     }
 }
-
